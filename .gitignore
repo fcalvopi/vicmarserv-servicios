@@ -1,0 +1,10 @@
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar node_modules en caso de usar Node.js en el futuro
+node_modules/
+
+# Ignorar carpetas de producción temporales
+dist/
+build/
