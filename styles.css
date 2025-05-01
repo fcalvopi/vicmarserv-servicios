@@ -1,11 +1,11 @@
-/*==========================
-  IMPORTACIÓN DE FUENTES
-===========================*/
+/* ==========================
+   IMPORTACIÓN DE FUENTES
+========================== */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-/*==========================
-  VARIABLES
-===========================*/
+/* ==========================
+   VARIABLES
+========================== */
 :root {
   --color-background: #cbd5e1;
   --color-background-alt: #8ec6ff;
@@ -21,9 +21,9 @@
   --font-family-display: "Nunito Sans", sans-serif;
 }
 
-/*==========================
-  RESETEO Y BASE
-===========================*/
+/* ==========================
+   RESET Y BASE
+========================== */
 *,
 ::before,
 ::after {
@@ -55,18 +55,18 @@ textarea {
   color: inherit;
 }
 
-/*==========================
-  ESTRUCTURA GENERAL
-===========================*/
+/* ==========================
+   ESTRUCTURA GENERAL
+========================== */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/*==========================
-  HEADER Y NAVEGACIÓN
-===========================*/
+/* ==========================
+   HEADER Y NAVEGACIÓN
+========================== */
 header {
   background: #005f73;
   color: white;
@@ -74,10 +74,10 @@ header {
 }
 
 header nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  list-style: none;
 }
 
 header nav a {
@@ -86,9 +86,9 @@ header nav a {
   font-weight: bold;
 }
 
-/*==========================
-  SECCIÓN HERO
-===========================*/
+/* ==========================
+   SECCIÓN HERO
+========================== */
 .hero {
   background: #0a9396;
   color: white;
@@ -101,14 +101,14 @@ header nav a {
   padding: 0.75rem 2rem;
   background: #94d2bd;
   color: #005f73;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   border-radius: 5px;
 }
 
-/*==========================
-  BOTÓN CONTACTO
-===========================*/
+/* ==========================
+   BOTÓN CONTACTO
+========================== */
 .boton-contacto {
   text-align: center;
   margin-top: 1rem;
@@ -126,9 +126,9 @@ header nav a {
   background-color: #1e40af;
 }
 
-/*==========================
-  SERVICIOS
-===========================*/
+/* ==========================
+   SERVICIOS
+========================== */
 .services {
   padding: 4rem 0;
   background: #e9ecef;
@@ -149,9 +149,9 @@ header nav a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*==========================
-  CONTACTO
-===========================*/
+/* ==========================
+   CONTACTO
+========================== */
 .contact {
   padding: 4rem 0;
   text-align: center;
@@ -191,14 +191,14 @@ header nav a {
   border: 0;
 }
 
-/*==========================
-  WHATSAPP
-===========================*/
+/* ==========================
+   WHATSAPP
+========================== */
 .whatsapp-link {
   display: inline-block;
   text-align: center;
   margin-top: 1rem;
-  background: #25D366;
+  background: #25d366;
   color: white;
   padding: 0.75rem;
   border-radius: 5px;
@@ -206,9 +206,9 @@ header nav a {
   font-weight: bold;
 }
 
-/*==========================
-  FOOTER
-===========================*/
+/* ==========================
+   FOOTER
+========================== */
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -217,11 +217,12 @@ footer {
   margin-top: 2rem;
 }
 
-/*==========================
-  RESPONSIVE
-===========================*/
+/* ==========================
+   RESPONSIVE
+========================== */
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
 }
+
