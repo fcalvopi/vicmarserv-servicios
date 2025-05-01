@@ -71,6 +71,7 @@ header nav a {
 .services {
     padding: 4rem 0;
     background: #e9ecef;
+    text-align: center;
 }
 
 .service-grid {
@@ -89,6 +90,7 @@ header nav a {
 
 .contact {
     padding: 4rem 0;
+     text-align: center;
 }
 
 .contact-grid {
