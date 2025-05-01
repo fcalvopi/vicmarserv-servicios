@@ -108,7 +108,7 @@ header nav a {
 
 .contact-form input, .contact-form textarea {
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
 }
 
