@@ -119,6 +119,7 @@ header nav a {
 
 .whatsapp-link {
     display: inline-block;
+    text-align: center
     margin-top: 1rem;
     background: #25D366;
     color: white;
