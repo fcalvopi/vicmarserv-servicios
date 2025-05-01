@@ -41,6 +41,22 @@ header nav a {
     padding: 4rem 0;
     text-align: center;
 }
+.boton-contacto {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-contacto {
+  background-color: #2563eb; /* azul */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-contacto:hover {
+  background-color: #1e40af;
+}
 
 .hero .btn {
     margin-top: 1rem;
