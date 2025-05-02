@@ -156,7 +156,7 @@ body {
    SERVICIOS
 ========================== */
 .servicios {
-  text-align: center;
+  text-align: left;
   padding: 2rem;
   background-color: #f7f7f7;
   display: grid;
