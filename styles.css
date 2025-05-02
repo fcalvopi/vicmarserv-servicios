@@ -69,61 +69,37 @@ textarea {
    HEADER Y NAVEGACIÓN
 ========================== */
 .site-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #008c8c;
-  border-bottom: 1px solid #ccc;
-  z-index: 1000;
+  background-color: #002244; /* azul oscuro, cámbialo si deseas otro color */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
-  height: auto;
-  width: 150px;
-  max-width: 100%;
-  margin-right: auto;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
+  height: 60px;
+  width: auto;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  margin-left: 20px;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #f0f0f0;
-}
-
-@media (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-links {
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  color: #ffcc00; /* amarillo de acento */
 }
 
 /* ==========================
