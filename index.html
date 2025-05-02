@@ -2,51 +2,84 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vicmar Services - Servicios de mantenimiento en pintura, electricidad, plomería y más en Ecuador." />
-  <title>Vicmar Services | Mantenimiento en Ecuador</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, impermeabilización, y mantenimiento preventivo y correctivo."/>
+  <title>Vicmar Services</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Header fijo -->
   <header class="site-header">
     <div class="header-container">
       <h1 class="logo">Vicmar Services</h1>
       <nav class="nav-links">
         <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
+        <a href="https://wa.me/593969054410" target="_blank">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Sección Hero -->
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h2>Soluciones de Mantenimiento para Hogares y Empresas en Ecuador</h2>
-        <p>Ofrecemos servicios de calidad en: pintura, electricidad, plomería, aluminio y vidrio, gypsum y mantenimiento preventivo y correctivo.</p>
-        <div class="boton-contacto">
-          <a href="#contacto" class="btn">Contáctanos</a>
-        </div>
-      </div>
-    </section>
+  <section class="hero">
+    <h2>Soluciones integrales para tu hogar o empresa</h2>
+    <p>Electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y más.</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+  </section>
 
-    <!-- Sección Servicios -->
-    <section id="servicios" class="services">
-      <div class="container">
-        <h2>Servicios</h2>
-        <div class="service-grid">
-          <article class="service-item">
-            <h3>Pintura</h3>
-            <p>Renovación de interiores y exteriores con acabados profesionales.</p>
-          </article>
-          <article class="service-item">
-            <h3>Electricidad</h3>
-            <p>Instalaciones y reparaciones eléctricas seguras y certificadas.</p>
-          </article>
-          <article class="service-item">
-            <h3>Plomería</h3>
-            <p>So
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <h3>Electricidad</h3>
+        <p>Instalaciones, reparaciones y mantenimiento eléctrico profesional.</p>
+      </div>
+      <div class="service-item">
+        <h3>Plomería</h3>
+        <p>Soluciones rápidas y efectivas en sistemas de agua y desagüe.</p>
+      </div>
+      <div class="service-item">
+        <h3>Pintura</h3>
+        <p>Acabados interiores y exteriores de alta calidad para todo tipo de superficies.</p>
+      </div>
+      <div class="service-item">
+        <h3>Aluminio y Vidrio</h3>
+        <p>Fabricación e instalación de estructuras en aluminio y vidrio.</p>
+      </div>
+      <div class="service-item">
+        <h3>Impermeabilización</h3>
+        <p>Protección duradera contra filtraciones en techos y paredes.</p>
+      </div>
+      <div class="service-item">
+        <h3>Mantenimiento</h3>
+        <p>Mantenimiento preventivo y correctivo para hogares y empresas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <form action="http://localhost:3000/contacto" method="POST">
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
+          <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+        <div class="boton-contacto">
+          <a class="btn-contacto" href="mailto:info@vicmarserv.com">Escríbenos por email</a>
+        </div>
+        <a class="whatsapp-link" href="https://wa.me/593969054410" target="_blank">Chatear por WhatsApp</a>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!..." 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vicmar Services. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
