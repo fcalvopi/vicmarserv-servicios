@@ -150,6 +150,10 @@ body {
 .btn-contacto:hover {
   background-color: #1e40af;
 }
+.btn-contacto {
+  margin-top: 100px; /* Ajusta este valor si es necesario */
+}
+
 
 /* ==========================
    SERVICIOS
