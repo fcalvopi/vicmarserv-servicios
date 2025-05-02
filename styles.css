@@ -106,6 +106,10 @@ textarea {
 .nav-links a:hover {
   color: #ffcc00; /* amarillo de acento */
 }
+/* Añadir espacio extra arriba del contenido para evitar que quede cubierto por el header fijo */
+body {
+  padding-top: 80px; /* Igual a la altura del header */
+}
 
 /* ==========================
    SECCIÓN HERO
