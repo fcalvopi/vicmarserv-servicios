@@ -133,7 +133,7 @@ body {
 ========================== */
 .boton-contacto {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1rem; /* Mantén esto si quieres un pequeño espacio */
 }
 
 .btn-contacto {
@@ -142,13 +142,21 @@ body {
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
+  display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
+  margin-top: 1rem; /* Usa un valor más moderado */
+  position: relative; /* Agrega esto para poder usar z-index */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
 .btn-contacto:hover {
   background-color: #1e40af;
 }
-.btn-contacto {
-  margin-top: 100px; /* Ajusta este valor si es necesario */
+
+@media (max-width: 768px) {
+  .btn-contacto {
+    width: 100%; /* El botón ocupará todo el ancho en pantallas pequeñas */
+    margin-top: 1rem; /* Ajuste del margen */
+  }
 }
 
 
