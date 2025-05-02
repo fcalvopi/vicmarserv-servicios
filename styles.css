@@ -69,10 +69,15 @@ textarea {
    HEADER Y NAVEGACIÓN
 ========================== */
 .site-header {
-  background-color: #002244; /* azul oscuro, cámbialo si deseas otro color */
+  background-color: #002244; /* color de fondo */
   height: 80px;
   display: flex;
-  align-items: left;
+  align-items: center;
+  position: fixed; /* Hace que el header sea fijo */
+  top: 0; /* Fija el header en la parte superior */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
