@@ -87,11 +87,16 @@ textarea {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  margin: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .nav-links {
   display: flex;
@@ -255,11 +260,6 @@ footer {
 /* ==========================
    RESPONSIVE
 ========================== */
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media (max-width: 600px) {
   .btn,
