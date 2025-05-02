@@ -37,13 +37,9 @@
 }
 
 body {
-  font-family: var(--font-family-body);
-  line-height: 1.6;
-  color: var(--color-text-default);
-  background-color: var(--color-background);
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-optical-sizing: auto;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 button,
@@ -73,11 +69,11 @@ textarea {
   height: 80px;
   display: flex;
   align-items: center;
-  position: fixed; /* Hace que el header sea fijo */
-  top: 0; /* Fija el header en la parte superior */
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -104,7 +100,7 @@ textarea {
 }
 
 .nav-links a:hover {
-  color: #ffcc00; /* amarillo de acento */
+  color: #ffcc00;
 }
 /* Añadir espacio extra arriba del contenido para evitar que quede cubierto por el header fijo */
 body {
@@ -119,6 +115,7 @@ body {
   color: #fff;
   padding: 6rem 1rem 2rem;
   text-align: center;
+  margin-top: 100px; /* para que no se solape con el header */
 }
 
 .hero .btn {
@@ -187,9 +184,12 @@ body {
 /* ==========================
    CONTACTO
 ========================== */
-.contact {
-  padding: 4rem 0;
-  text-align: center;
+.contacto {
+  margin-top: 100px;
+}
+
+section {
+  padding: 50px 20px;
 }
 
 .contact-grid {
