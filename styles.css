@@ -111,21 +111,13 @@ body {
    SECCIÓN HERO
 ========================== */
 .hero {
-  background-color: #008c8c;
-  color: #fff;
-  padding: 6rem 1rem 2rem;
+  position: relative;
+  padding: 3rem 1rem; /* Espacio alrededor de la sección */
   text-align: center;
-  margin-top: 100px; /* para que no se solape con el header */
 }
 
-.hero .btn {
-  margin-top: 1rem;
-  padding: 0.75rem 2rem;
-  background: #94d2bd;
-  color: #005f73;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
+.hero h2, .hero p {
+  margin-bottom: 1.5rem;
 }
 
 /* ==========================
@@ -139,23 +131,23 @@ body {
 .btn-contacto {
   background-color: #2563eb;
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
-  display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
-  margin-top: 1rem; /* Usa un valor más moderado */
-  position: relative; /* Agrega esto para poder usar z-index */
+  display: inline-block;
+  font-size: 1.1rem;
+  position: relative;
   z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
-
 .btn-contacto:hover {
   background-color: #1e40af;
 }
 
 @media (max-width: 768px) {
   .btn-contacto {
-    width: 100%; /* El botón ocupará todo el ancho en pantallas pequeñas */
-    margin-top: 1rem; /* Ajuste del margen */
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem; /* Más margen en pantallas pequeñas */
   }
 }
 
