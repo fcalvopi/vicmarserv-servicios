@@ -49,6 +49,32 @@ textarea {
   line-height: inherit;
   color: inherit;
 }
+/* Estilo para el logo */
+.logo-img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px; /* Bordes suaves, opcional */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.logo-img:hover {
+  transform: scale(1.05); /* Efecto zoom sutil al pasar el mouse */
+}
+
+/* Alineación de logo y navegación */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 
 /* ==========================
    ESTRUCTURA GENERAL
