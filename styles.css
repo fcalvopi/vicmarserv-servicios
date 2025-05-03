@@ -29,7 +29,6 @@
 ::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,10 @@
 }
 body {
   background: none;
-  background-color: white; /* o cualquier color que prefieras */
+  background-color: white;
+  padding-top: 80px;
+  font-family: var(--font-family-body);
+  color: var(--color-text-default);
 }
 
 button,
@@ -49,69 +51,12 @@ textarea {
   line-height: inherit;
   color: inherit;
 }
-/* Estilo para el logo */
-.logo-img {
-  width: 120px;
-  height: auto;
-  border-radius: 8px; /* Bordes suaves, opcional */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  transition: transform 0.3s ease; /* Animación al pasar el mouse */
-}
-
-.logo-img:hover {
-  transform: scale(1.05); /* Efecto zoom sutil al pasar el mouse */
-}
-
-/* Alineación de logo y navegación */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo-img {
-  width: 50px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #333; /* O el color principal de tu marca */
-  font-family: 'Nunito Sans', sans-serif;
-}
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
 
 /* ==========================
-   ESTRUCTURA GENERAL
-========================== */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ==========================
-   HEADER Y NAVEGACIÓN
+   HEADER Y LOGO
 ========================== */
 .site-header {
-  background-color: #002244; /* color de fondo */
+  background-color: #002244;
   height: 80px;
   display: flex;
   align-items: center;
@@ -130,27 +75,54 @@ textarea {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px 20px;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   height: 60px;
-  width: auto;
 }
 
+.logo-img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.logo-img:hover {
+  transform: scale(1.05);
+}
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-family-display);
+  margin-left: 10px;
+}
+
+/* ==========================
+   NAVEGACIÓN
+========================== */
 .nav-links a {
-  color: white;
-  text-decoration: none;
   margin-left: 20px;
+  text-decoration: none;
+  color: white;
   font-weight: bold;
   transition: color 0.3s;
 }
-
 .nav-links a:hover {
   color: #ffcc00;
 }
-/* Añadir espacio extra arriba del contenido para evitar que quede cubierto por el header fijo */
-body {
-  padding-top: 80px; /* Igual a la altura del header */
+
+/* ==========================
+   ESTRUCTURA GENERAL
+========================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ==========================
@@ -158,22 +130,17 @@ body {
 ========================== */
 .hero {
   position: relative;
-  padding: 3rem 1rem; /* Espacio alrededor de la sección */
+  padding: 3rem 1rem;
   text-align: center;
 }
-
-.hero h2, .hero p {
+.hero h2,
+.hero p {
   margin-bottom: 1.5rem;
 }
 
 /* ==========================
    BOTÓN CONTACTO
 ========================== */
-.btn-contacto {
-  text-align: center;
-  margin-top: 1rem; /* Mantén esto si quieres un pequeño espacio */
-}
-
 .btn-contacto {
   background-color: #2563eb;
   color: white;
@@ -182,46 +149,34 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 1.1rem;
+  margin-top: 1rem;
   position: relative;
-  z-index: 10; /* Asegura que esté por encima de otros elementos */
+  z-index: 10;
 }
 .btn-contacto:hover {
   background-color: #1e40af;
 }
 
-@media (max-width: 768px) {
-  .btn-contacto {
-    width: 100%;
-    padding: 1rem 0;
-    margin-top: 2rem; /* Más margen en pantallas pequeñas */
-  }
-}
-
-
 /* ==========================
    SERVICIOS
 ========================== */
-.servicio {
-  text-align: left;
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   padding: 2rem;
   background-color: #f7f7f7;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
-  gap: 1rem;
 }
-
 .servicio {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   text-align: center;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
 }
-
 .servicio i {
   font-size: 2.5rem;
   color: #007bff;
@@ -229,31 +184,16 @@ body {
 }
 .servicio h2 {
   font-size: 2rem;
-  margin-bottom: 30px; /* Espacio entre el título y los servicios */
-  text-align: left;  /* Opcional: centrar el título */
+  margin-bottom: 30px;
+  text-align: left;
 }
 .servicio h3 {
   margin: 0.5rem 0 0.3rem;
   font-size: 1.2rem;
 }
-
 .servicio p {
   font-size: 0.95rem;
   color: #444;
-}
-
-/* Media Query para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .servicios {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
-  }
-}
-
-/* Media Query para pantallas muy pequeñas (móviles) */
-@media (max-width: 480px) {
-  .servicios {
-    grid-template-columns: 1fr; /* 1 columna en móviles */
-  }
 }
 
 /* ==========================
@@ -262,31 +202,26 @@ body {
 .contacto {
   margin-top: 100px;
 }
-
 section {
   padding: 50px 20px;
 }
-
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
 }
-
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
   border: 3px solid #ccc;
   border-radius: 5px;
 }
-
 .contact-form .btn {
   background: #005f73;
   color: white;
@@ -323,7 +258,16 @@ footer {
 /* ==========================
    RESPONSIVE
 ========================== */
-
+@media (max-width: 768px) {
+  .servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-contacto {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+}
 @media (max-width: 600px) {
   .btn,
   .btn-contacto,
@@ -331,9 +275,17 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
-
+  .logo-img {
+    width: 40px;
+  }
   .contact-map iframe {
     height: 200px;
   }
 }
+@media (max-width: 480px) {
+  .servicios {
+    grid-template-columns: 1fr;
+  }
+}
+
 
