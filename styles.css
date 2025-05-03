@@ -126,7 +126,7 @@ body {
 /* ==========================
    BOTÓN CONTACTO
 ========================== */
-.boton-contacto {
+.btn-contacto {
   text-align: center;
   margin-top: 1rem; /* Mantén esto si quieres un pequeño espacio */
 }
@@ -158,7 +158,7 @@ body {
 /* ==========================
    SERVICIOS
 ========================== */
-.servicios {
+.servicio {
   text-align: left;
   padding: 2rem;
   background-color: #f7f7f7;
@@ -184,7 +184,7 @@ body {
   color: #007bff;
   margin-bottom: 0.5rem;
 }
-.servicios h2 {
+.servicio h2 {
   font-size: 2rem;
   margin-bottom: 30px; /* Espacio entre el título y los servicios */
   text-align: left;  /* Opcional: centrar el título */
