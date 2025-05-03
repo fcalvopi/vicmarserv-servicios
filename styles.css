@@ -184,7 +184,11 @@ body {
   color: #007bff;
   margin-bottom: 0.5rem;
 }
-
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px; /* Espacio entre el título y los servicios */
+  text-align: left;  /* Opcional: centrar el título */
+}
 .servicio h3 {
   margin: 0.5rem 0 0.3rem;
   font-size: 1.2rem;
