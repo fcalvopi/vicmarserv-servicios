@@ -51,7 +51,7 @@ textarea {
 }
 /* Estilo para el logo */
 .logo-img {
-  width: 50px;
+  width: 120px;
   height: auto;
   border-radius: 8px; /* Bordes suaves, opcional */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
