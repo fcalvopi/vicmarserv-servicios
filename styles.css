@@ -35,13 +35,16 @@
   padding: 0;
   border: 0;
 }
-
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url('/assets/image/logo.png'); /* Asegúrate de que esta ruta sea correcta */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
 }
-
 button,
 input,
 optgroup,
