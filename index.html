@@ -2,89 +2,95 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, impermeabilización, y mantenimiento preventivo y correctivo."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y mantenimiento preventivo y correctivo en Quito, Ecuador." />
   <title>Vicmar Services</title>
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
- <header class="site-header">
-  <div class="header-container">
-    <a href="#inicio">
-      <img src="assets/image/logo.png" alt="Vicmar Services" class="logo" />
-    </a>
-    <nav class="nav-links">
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
-  <section class="hero">
-    <h2>Soluciones integrales para tu hogar o empresa</h2>
-    <p>Electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y más.</p>
-    <a href="#contacto" class="btn">Contáctanos</a>
-  </section>
-
-  <section class="servicios">
-  <h2>Servicios</h2>
-  <div class="servicio">
-    <i class="fas fa-bolt"></i>
-    <h3>Electricidad</h3>
-    <p>Instalaciones eléctricas, mantenimiento de redes, iluminación y más.</p>
-  </div>
-  <div class="servicio">
-    <i class="fas fa-tools"></i>
-    <h3>Plomería</h3>
-    <p>Reparación de fugas, instalación de grifería, redes sanitarias y más.</p>
-  </div>
-  <div class="servicio">
-    <i class="fas fa-paint-roller"></i>
-    <h3>Pintura</h3>
-    <p>Aplicación de pintura interior y exterior, acabados profesionales.</p>
-  </div>
-  <div class="servicio">
-    <i class="fas fa-window-maximize"></i>
-    <h3>Aluminio y Vidrio</h3>
-    <p>Fabricación e instalación de ventanas, puertas, cerramientos y más.</p>
-  </div>
-  <div class="servicio">
-    <i class="fas fa-water"></i>
-    <h3>Impermeabilización</h3>
-    <p>Protección de techos y superficies contra filtraciones de agua.</p>
-  </div>
-
-  </section>
-
-  <section id="contacto" class="contact">
-    <h2>Contacto</h2>
-    <div class="contact-grid">
-      <div class="contact-form">
-        <form action="http://localhost:3000/contacto" method="POST">
-          <input type="text" name="nombre" placeholder="Tu nombre" required />
-           <input type="text" name="nombre" placeholder="Tu teléfono" required />
-          <input type="email" name="email" placeholder="Tu correo electrónico" required />
-          <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-          <button type="submit" class="btn">Enviar mensaje</button>
-        </form>
-        <div class="boton-contacto">
-          <a class="btn-contacto" href="mailto:info@vicmarserv.com">Escríbenos por email</a>
-        </div>
-        <a class="whatsapp-link" href="https://wa.me/593969054410" target="_blank">Chatear por WhatsApp</a>
-      </div>
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.08646459652!2d-78.53504759848336!3d-0.2772294955393175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5988b7a003067%3A0x67669fce7516b65d!2sCalceta%2C%20170139%20Quito!5e0!3m2!1ses-419!2sec!4v1746203358954!5m2!1ses-419!2sec" 
-          width="600" height="450" 
-          style="border:0;" allowfullscreen="" loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-          
-      </div>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#inicio" class="logo">
+        <img src="assets/image/logo.png" alt="Vicmar Services Logo" class="logo-img" />
+        <span class="logo-text">Vicmar Services</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
-  </section>
+  </header>
+
+  <main>
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+      <h2>Soluciones integrales para tu hogar o empresa</h2>
+      <p>Electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y más.</p>
+      <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <div class="servicio">
+        <i class="fas fa-bolt"></i>
+        <h3>Electricidad</h3>
+        <p>Instalaciones eléctricas, mantenimiento de redes, iluminación y más.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-tools"></i>
+        <h3>Plomería</h3>
+        <p>Reparación de fugas, instalación de grifería, redes sanitarias y más.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-paint-roller"></i>
+        <h3>Pintura</h3>
+        <p>Aplicación de pintura interior y exterior, acabados profesionales.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-window-maximize"></i>
+        <h3>Aluminio y Vidrio</h3>
+        <p>Fabricación e instalación de ventanas, puertas, cerramientos y más.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-water"></i>
+        <h3>Impermeabilización</h3>
+        <p>Protección de techos y superficies contra filtraciones de agua.</p>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form action="http://localhost:3000/contacto" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="tel" name="telefono" placeholder="Tu teléfono" required />
+            <input type="email" name="email" placeholder="Tu correo electrónico" required />
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar mensaje</button>
+          </form>
+          <div class="boton-contacto">
+            <a class="btn-contacto" href="mailto:info@vicmarserv.com">Escríbenos por email</a>
+          </div>
+          <a class="whatsapp-link" href="https://wa.me/593969054410" target="_blank" rel="noopener">Chatear por WhatsApp</a>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.08646459652!2d-78.53504759848336!3d-0.2772294955393175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5988b7a003067%3A0x67669fce7516b65d!2sCalceta%2C%20170139%20Quito!5e0!3m2!1ses-419!2sec!4v1746203358954!5m2!1ses-419!2sec"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Vicmar Services. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
+
