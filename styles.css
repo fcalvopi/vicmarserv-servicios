@@ -80,27 +80,38 @@ textarea {
 }
 
 .logo {
-  height: 10px; /* o el tamaño que desees */
+  /* Elimina height fija */
   width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  gap: 0.5rem;
 }
 
 .logo-img {
-  width: 40px;
+  width: 32px; /* ajusta este valor según el tamaño deseado */
   height: auto;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
+
 .logo-img:hover {
   transform: scale(1.05);
 }
+
 .logo-text {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #fff;
   font-family: var(--font-family-display);
-  margin-left: 10px;
 }
+
 
 /* ==========================
    NAVEGACIÓN
