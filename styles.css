@@ -72,6 +72,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
+   gap: 1.5rem;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -85,10 +86,10 @@ textarea {
 }
 
 .logo-img {
-  width: 40px;
+  width: 80px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 .logo-img:hover {
@@ -268,6 +269,32 @@ footer {
     margin-top: 2rem;
   }
 }
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    margin: 5px 10px;
+  }
+}
+
 @media (max-width: 600px) {
   .btn,
   .btn-contacto,
