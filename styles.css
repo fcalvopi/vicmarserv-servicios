@@ -80,21 +80,14 @@ textarea {
 }
 
 .logo {
-  /* Elimina height fija */
-  width: auto;
   display: flex;
   align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  width: auto;
   gap: 0.5rem;
+  text-decoration: none;
 }
 
 .logo-img {
-  width: 32px; /* ajusta este valor según el tamaño deseado */
+  width: 32px;
   height: auto;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
@@ -111,6 +104,7 @@ textarea {
   color: #fff;
   font-family: var(--font-family-display);
 }
+
 
 
 /* ==========================
@@ -312,15 +306,22 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
-  @media (max-width: 600px) {
+ @media (max-width: 600px) {
+  .logo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
   .logo-img {
-    width: 40px;
+    width: 28px;
   }
 
   .logo-text {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
+
 
   .contact-map iframe {
     height: 200px;
