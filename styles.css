@@ -85,7 +85,7 @@ textarea {
 }
 
 .logo-img {
-  width: 120px;
+  width: 40px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -95,7 +95,7 @@ textarea {
   transform: scale(1.05);
 }
 .logo-text {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
   font-family: var(--font-family-display);
@@ -258,7 +258,7 @@ footer {
 /* ==========================
    RESPONSIVE
 ========================== */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .servicios {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -275,9 +275,16 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
+  @media (max-width: 600px) {
   .logo-img {
     width: 40px;
   }
+
+  .logo-text {
+    font-size: 0.8rem;
+  }
+}
+
   .contact-map iframe {
     height: 200px;
   }
