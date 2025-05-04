@@ -80,12 +80,12 @@ textarea {
 }
 
 .logo {
-  height: 40px; /* o el tamaño que desees */
+  height: 10px; /* o el tamaño que desees */
   width: auto;
 }
 
 .logo-img {
-  width: 80px;
+  width: 40px;
   height: auto;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
