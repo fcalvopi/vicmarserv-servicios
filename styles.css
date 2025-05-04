@@ -80,9 +80,8 @@ textarea {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  height: 60px;
+  height: 40px; /* o el tamaño que desees */
+  width: auto;
 }
 
 .logo-img {
