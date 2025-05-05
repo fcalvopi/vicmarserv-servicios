@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y mantenimiento preventivo y correctivo en Quito, Ecuador." />
   <title>Vicmar Services</title>
-  <link rel="icon" href="assets/image/logo.png" type="image/png" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header class="site-header">
     <div class="header-container">
       <a href="#inicio" class="logo">
-        <img src="assets/image/logo.png" alt="Vicmar Services Logo" class="logo-img" />
+        <img src="assets/image/logo.png" alt="Logo de Vicmar Services" class="logo-img" />
         <span class="logo-text">Vicmar Services</span>
       </a>
       <nav class="nav-links">
@@ -30,7 +29,7 @@
     <section id="inicio" class="hero">
       <h2>Soluciones integrales para tu hogar o empresa</h2>
       <p>Electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y más.</p>
-      <a href="#contacto" class="btn-contacto">Contáctanos</a>
+      <a href="#contacto" class="btn">Contáctanos</a>
     </section>
 
     <!-- Sección Servicios -->
@@ -49,7 +48,7 @@
       <div class="servicio">
         <i class="fas fa-paint-roller"></i>
         <h3>Pintura</h3>
-        <p>Aplicación de pintura interior y exterior, acabados profesionales.</p>
+        <p>Aplicación de pintura interior y exterior con acabados profesionales.</p>
       </div>
       <div class="servicio">
         <i class="fas fa-window-maximize"></i>
@@ -64,24 +63,34 @@
     </section>
 
     <!-- Sección Contacto -->
-    <section id="contacto" class="contacto">
+    <section id="contacto" class="contact">
       <h2>Contacto</h2>
       <div class="contact-grid">
         <div class="contact-form">
           <form action="http://localhost:3000/contacto" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required />
-            <input type="tel" name="telefono" placeholder="Tu teléfono" required />
-            <input type="email" name="email" placeholder="Tu correo electrónico" required />
-            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required />
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+
             <button type="submit" class="btn">Enviar mensaje</button>
           </form>
+
           <div class="boton-contacto">
             <a class="btn-contacto" href="mailto:info@vicmarserv.com">Escríbenos por email</a>
           </div>
           <a class="whatsapp-link" href="https://wa.me/593969054410" target="_blank" rel="noopener">Chatear por WhatsApp</a>
         </div>
         <div class="contact-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.08646459652!2d-78.53504759848336!3d-0.2772294955393175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5988b7a003067%3A0x67669fce7516b65d!2sCalceta%2C%20170139%20Quito!5e0!3m2!1ses-419!2sec!4v1746203358954!5m2!1ses-419!2sec"
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.08646459652!2d-78.53504759848336!3d-0.2772294955393175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5988b7a003067%3A0x67669fce7516b65d!2sCalceta%2C%20170139%20Quito!5e0!3m2!1ses-419!2sec!4v1746203358954!5m2!1ses-419!2sec" 
             width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
@@ -94,5 +103,3 @@
   </footer>
 </body>
 </html>
-
-
