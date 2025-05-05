@@ -305,14 +305,4 @@ footer {
 }
 
 
-  .contact-map iframe {
-    height: 200px;
-  }
-}
-@media (max-width: 480px) {
-  .servicios {
-    grid-template-columns: 1fr;
-  }
-}
-
 
