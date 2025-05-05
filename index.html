@@ -3,105 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y mantenimiento preventivo y correctivo en Quito, Ecuador." />
-  <title>Vicmar Services</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Vicmar Services | Mantenimiento Integral en Ecuador</title>
+  <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, mantenimiento preventivo y correctivo en Ecuador." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <a href="#inicio" class="logo">
-        <img src="assets/image/logo.png" alt="Logo de Vicmar Services" class="logo-img" />
-        <span class="logo-text">Vicmar Services</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+  <header>
+    <div class="container">
+      <h1>Vicmar Services</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Sección Hero -->
     <section id="inicio" class="hero">
-      <h2>Soluciones integrales para tu hogar o empresa</h2>
-      <p>Electricidad, plomería, pintura, aluminio y vidrio, impermeabilización y más.</p>
-      <a href="#contacto" class="btn-contacto">Contáctanos</a>
-    </section>
-
-    <!-- Sección Servicios -->
-    <section id="servicios" class="servicios">
-      <h2>Servicios</h2>
-      <div class="servicio">
-        <i class="fas fa-bolt"></i>
-        <h3>Electricidad</h3>
-        <p>Instalaciones eléctricas, mantenimiento de redes, iluminación y más.</p>
-      </div>
-      <div class="servicio">
-        <i class="fas fa-tools"></i>
-        <h3>Plomería</h3>
-        <p>Reparación de fugas, instalación de grifería, redes sanitarias y más.</p>
-      </div>
-      <div class="servicio">
-        <i class="fas fa-paint-roller"></i>
-        <h3>Pintura</h3>
-        <p>Aplicación de pintura interior y exterior con acabados profesionales.</p>
-      </div>
-      <div class="servicio">
-        <i class="fas fa-window-maximize"></i>
-        <h3>Aluminio y Vidrio</h3>
-        <p>Fabricación e instalación de ventanas, puertas, cerramientos y más.</p>
-      </div>
-      <div class="servicio">
-        <i class="fas fa-water"></i>
-        <h3>Impermeabilización</h3>
-        <p>Protección de techos y superficies contra filtraciones de agua.</p>
+      <div class="container">
+        <h2>Soluciones de Mantenimiento para Hogares y Empresas en Ecuador</h2>
+        <p>Ofrecemos servicios de calidad en pintura, electricidad, plomería, aluminio y vidrio, gypsum y mantenimiento preventivo y correctivo.</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
       </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contacto">
-      <h2>Contacto</h2>
-      <div class="contact-grid">
-        <div class="contact-form">
-          <form action="http://localhost:3000/contacto" method="POST">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required />
-
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-
-            <button type="submit" class="btn">Enviar mensaje</button>
-          </form>
-
-          <div class="boton-contacto">
-            <a class="btn-contacto" href="mailto:info@vicmarserv.com">Escríbenos por email</a>
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+          <div class="card">
+            <h3>Pintura</h3>
+            <p>Renovación de interiores y exteriores con acabados profesionales.</p>
           </div>
-          <a class="whatsapp-link" href="https://wa.me/593969054410" target="_blank" rel="noopener">Chatear por WhatsApp</a>
+          <div class="card">
+            <h3>Electricidad</h3>
+            <p>Instalaciones y reparaciones eléctricas seguras y certificadas.</p>
+          </div>
+          <div class="card">
+            <h3>Plomería</h3>
+            <p>Solución de fugas, cambios de tubería, instalaciones sanitarias.</p>
+          </div>
+          <div class="card">
+            <h3>Aluminio y Vidrio</h3>
+            <p>Fabricación e instalación de ventanas, puertas y estructuras.</p>
+          </div>
+          <div class="card">
+            <h3>Gypsum</h3>
+            <p>Instalación de paredes, techos falsos y diseños en drywall.</p>
+          </div>
+          <div class="card">
+            <h3>Mantenimiento Preventivo y Correctivo</h3>
+            <p>Prevención y solución inmediata para el buen funcionamiento de tus espacios.</p>
+          </div>
         </div>
-        <div class="contact-map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.08646459652!2d-78.53504759848336!3d-0.2772294955393175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5988b7a003067%3A0x67669fce7516b65d!2sCalceta%2C%20170139%20Quito!5e0!3m2!1ses-419!2sec!4v1746203358954!5m2!1ses-419!2sec" 
-            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="container">
+        <h2>Contáctanos</h2>
+        <form action="https://tu-backend.com/api/contacto" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required />
+
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" required />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+        <div class="contact-info">
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/593969054410" target="_blank">0969054410</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@vicmarserv.com">info@vicmarserv.com</a></p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Vicmar Services. Todos los derechos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Vicmar Services. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
+
