@@ -119,6 +119,42 @@ textarea {
 }
 
 /* ==========================
+   BOTONES GENERALES
+========================== */
+.btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--color-primary-active);
+}
+
+/* ==========================
+   BOTÓN CONTACTO
+========================== */
+.btn-contacto {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 10;
+}
+.btn-contacto:hover {
+  background-color: #1e40af;
+}
+
+/* ==========================
    ESTRUCTURA GENERAL
 ========================== */
 .container {
@@ -141,43 +177,14 @@ textarea {
 }
 
 /* ==========================
-   BOTÓN GENERAL
-========================== */
-.btn,
-.btn-contacto,
-.whatsapp-link {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 0.8rem 2rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.btn:hover,
-.btn-contacto:hover {
-  background-color: var(--color-primary-active);
-  transform: scale(1.03);
-}
-
-/* ==========================
    SERVICIOS
 ========================== */
-.servicios {
-  padding: 2rem;
-  background-color: #f7f7f7;
-}
-.servicios > h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
 .servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  padding: 2rem;
+  background-color: #f7f7f7;
 }
 .servicio {
   display: flex;
@@ -194,6 +201,11 @@ textarea {
   color: #007bff;
   margin-bottom: 0.5rem;
 }
+.servicio h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: left;
+}
 .servicio h3 {
   margin: 0.5rem 0 0.3rem;
   font-size: 1.2rem;
@@ -206,7 +218,7 @@ textarea {
 /* ==========================
    CONTACTO
 ========================== */
-#contacto {
+.contact {
   margin-top: 100px;
 }
 section {
@@ -231,29 +243,33 @@ section {
 }
 .contact-form .btn {
   background: #005f73;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-.contact-form .btn:hover {
-  background: #003f50;
+
+/* ==========================
+   MAPA
+========================== */
+.contact-map iframe {
+  width: 100%;
+  height: 40vh;
+  border: 0;
 }
 
 /* ==========================
    WHATSAPP
 ========================== */
 .whatsapp-link {
-  background: #25d366;
-  margin-top: 1rem;
+  display: inline-block;
   text-align: center;
+  margin-top: 1rem;
+  background: #25d366;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
-}
-
-/* ==========================
-   FOCUS ACCESIBLE
-========================== */
-input:focus,
-textarea:focus,
-button:focus {
-  outline: 2px solid var(--color-border-active);
-  outline-offset: 2px;
 }
 
 /* ==========================
@@ -270,17 +286,11 @@ footer {
 /* ==========================
    RESPONSIVE
 ========================== */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .servicios {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
   .btn,
   .btn-contacto,
   .whatsapp-link {
@@ -288,6 +298,10 @@ footer {
     box-sizing: border-box;
     padding: 1rem 0;
     margin-top: 2rem;
+  }
+
+  .btn-contacto {
+    margin-bottom: 1rem;
   }
 
   .header-container {
@@ -309,5 +323,9 @@ footer {
 
   .logo-text {
     font-size: 0.85rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
