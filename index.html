@@ -5,97 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vicmar Services | Mantenimiento Integral en Ecuador</title>
   <meta name="description" content="Servicios profesionales de electricidad, plomería, pintura, aluminio y vidrio, mantenimiento preventivo y correctivo en Ecuador." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Vicmar Services" />
+  <meta property="og:description" content="Expertos en mantenimiento, reparación y construcción en Ecuador." />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+  </style>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Vicmar Services</h1>
+<body class="bg-white text-gray-800">
+  <header class="bg-blue-700 text-white py-6 shadow">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Vicmar Services</h1>
       <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+        <ul class="flex space-x-4">
+          <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+          <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+          <li><a href="#contacto" class="hover:underline">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h2>Mejora, modificación y reparación para Hogares y Empresas en Ecuador</h2>
-        <p>Ofrecemos servicios de calidad en: pintura, electricidad, plomería, aluminio y vidrio, gypsum y mantenimiento preventivo y correctivo.</p>
-        <a href="#contacto" class="btn">Contáctanos</a>
+    <section id="inicio" class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Mejora, modificación y reparación para Hogares y Empresas en Ecuador</h2>
+        <p class="mb-6">Ofrecemos servicios de calidad en: pintura, electricidad, plomería, aluminio y vidrio, gypsum y mantenimiento preventivo y correctivo.</p>
+        <a href="#contacto" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-500 transition">Contáctanos</a>
       </div>
     </section>
 
-    <section id="servicios" class="services">
-      <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-cards">
-          <div class="card">
-            <h3>Pintura</h3>
+    <section id="servicios" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-10">Nuestros Servicios</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white border rounded shadow">
+            <h3 class="font-bold text-xl mb-2">Pintura</h3>
             <p>Renovación de interiores y exteriores con acabados profesionales.</p>
           </div>
-          <div class="card">
-            <h3>Electricidad</h3>
+          <div class="p-6 bg-white border rounded shadow">
+            <h3 class="font-bold text-xl mb-2">Electricidad</h3>
             <p>Instalaciones y reparaciones eléctricas seguras y certificadas.</p>
           </div>
-          <div class="card">
-            <h3>Plomería</h3>
+          <div class="p-6 bg-white border rounded shadow">
+            <h3 class="font-bold text-xl mb-2">Plomería</h3>
             <p>Solución de fugas, cambios de tubería, instalaciones sanitarias.</p>
           </div>
-          <div class="card">
-            <h3>Aluminio y Vidrio</h3>
+          <div class="p-6 bg-white border rounded shadow">
+            <h3 class="font-bold text-xl mb-2">Aluminio y Vidrio</h3>
             <p>Fabricación e instalación de ventanas, puertas y estructuras.</p>
           </div>
-          <div class="card">
-            <h3>Gypsum</h3>
+          <div class="p-6 bg-white border rounded shadow">
+            <h3 class="font-bold text-xl mb-2">Gypsum</h3>
             <p>Instalación de paredes, techos falsos y diseños en drywall.</p>
           </div>
-          <div class="card">
-            <h3>Mantenimiento Preventivo y Correctivo</h3>
+          <div class="p-6 bg-white border rounded shadow">
+            <h3 class="font-bold text-xl mb-2">Mantenimiento Preventivo y Correctivo</h3>
             <p>Prevención y solución inmediata para el buen funcionamiento de tus espacios.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="contact">
-      <div class="container">
-        <h2>Contáctanos</h2>
-        <form action="https://vicmarserv.com.com/api/contacto" method="POST">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" required />
-
-          <label for="correo">Correo Electrónico</label>
-          <input type="email" id="correo" name="correo" required />
-
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-          <button type="submit" class="btn">Enviar Mensaje</button>
+    <section id="contacto" class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4 max-w-2xl">
+        <h2 class="text-2xl font-bold text-center mb-10">Contáctanos</h2>
+        <form action="https://vicmarserv.com/api/contacto" method="POST" class="space-y-6">
+          <div>
+            <label for="nombre" class="block mb-1 font-semibold">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required class="w-full p-3 border rounded" />
+          </div>
+          <div>
+            <label for="telefono" class="block mb-1 font-semibold">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required class="w-full p-3 border rounded" />
+          </div>
+          <div>
+            <label for="correo" class="block mb-1 font-semibold">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required class="w-full p-3 border rounded" />
+          </div>
+          <div>
+            <label for="mensaje" class="block mb-1 font-semibold">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required class="w-full p-3 border rounded"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-500 transition">Enviar Mensaje</button>
         </form>
-        <div class="contact-info">
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/593969054410" target="_blank">0969054410</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@vicmarserv.com">info@vicmarserv.com</a></p>
+        <div class="mt-8 text-center">
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/593969054410" target="_blank" class="text-blue-700 hover:underline">0969054410</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@vicmarserv.com" class="text-blue-700 hover:underline">info@vicmarserv.com</a></p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
+  <footer class="bg-blue-700 text-white py-4 mt-10">
+    <div class="container mx-auto px-4 text-center">
       <p>&copy; 2025 Vicmar Services. Todos los derechos reservados.</p>
     </div>
   </footer>
+</body>
+</html>
+
 </body>
 </html>
 
