@@ -1,6 +1,6 @@
 # Vicmar Services - Página Web
 
-Sitio web oficial de **Vicmar Services**, empresa que ofrece servicios generales de mantenimiento para residencias y empresas en Ecuador.
+Sitio web oficial de **Vicmar Services**, empresa que ofrece servicios reparación, modificación y mejora para residencias y empresas en Ecuador.
 
 ## 🚀 Secciones
 
