@@ -103,6 +103,50 @@ textarea {
   color: #fff;
   font-family: var(--font-family-display);
 }
+.navbar {
+  background-color: #004080;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.tienda-btn {
+  background-color: #ffcc00;
+  color: #004080;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 
 /* ==========================
    NAVEGACIÓN
