@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informe de Trabajo - Vicmar Services</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    header img {
+      width: 80px;
+      margin-right: 20px;
+    }
+    h1 {
+      margin: 0;
+      color: #333;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .photo {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="informe">
+    <header>
+      <img src="android-chrome-512x512.png" alt="Logo Vicmar" />
+      <div>
+        <h1>Vicmar Services</h1>
+        <p>Servicios de Mantenimiento y Reparación</p>
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>Datos del Cliente</h2>
+      <label>Nombre:</label>
+      <input type="text" />
+      <label>Teléfono:</label>
+      <input type="text" />
+      <label>Dirección del trabajo:</label>
+      <input type="text" />
+    </div>
+
+    <div class="section">
+      <h2>Detalles del Servicio</h2>
+      <label>Descripción del trabajo:</label>
+      <textarea rows="4"></textarea>
+      <label>Materiales utilizados:</label>
+      <textarea rows="3"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>Fotos del trabajo</h2>
+      <label>Antes:</label>
+      <input class="photo" type="file" accept="image/*" />
+      <label>Después:</label>
+      <input class="photo" type="file" accept="image/*" />
+    </div>
+
+    <div class="section">
+      <h2>Estado y Observaciones</h2>
+      <label>Estado del trabajo:</label>
+      <input type="text" placeholder="Completado, Pendiente, Requiere seguimiento, etc." />
+      <label>Observaciones adicionales:</label>
+      <textarea rows="3"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>Firmas</h2>
+      <label>Técnico responsable:</label>
+      <input type="text" />
+      <label>Cliente conforme:</label>
+      <input type="text" />
+    </div>
+
+    <footer>
+      <p>Vicmar Services - WhatsApp: 0969054410 | Email: info@vicmarserv.com</p>
+      <p>www.vicmarserv.com</p>
+    </footer>
+  </div>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <button onclick="generatePDF()">Descargar en PDF</button>
+    <button onclick="window.location.href='index.html'">Volver al inicio</button>
+  </div>
+
+  <script>
+    function generatePDF() {
+      const element = document.getElementById('informe');
+      const opt = {
+        margin: 0.5,
+        filename: 'informe_vicmar.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+</body>
+</html>
