@@ -124,5 +124,54 @@
     </div>
 
     <div class="section">
-      <h2>Firmas<
+      <h2>Firmas</h2>
+      <label>Técnico responsable:</label>
+      <input type="text" />
+      <label>Cliente conforme:</label>
+      <input type="text" />
+    </div>
 
+    <footer>
+      <p>Vicmar Services - WhatsApp: 0969054410 | Email: info@vicmarserv.com</p>
+      <p>www.vicmarserv.com</p>
+    </footer>
+  </div>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <button onclick="generatePDF()">Descargar en PDF</button>
+    <button onclick="window.location.href='index.html'">Volver al inicio</button>
+  </div>
+
+  <script>
+    function previewImages(input, previewId) {
+      const previewContainer = document.getElementById(previewId);
+      previewContainer.innerHTML = "";
+
+      if (input.files) {
+        Array.from(input.files).forEach(file => {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            previewContainer.appendChild(img);
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+    }
+
+    function generatePDF() {
+      const element = document.getElementById('informe');
+      const opt = {
+        margin: 0.5,
+        filename: 'informe_vicmar.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+        pagebreak: { mode: ['css', 'legacy'] }
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+</body>
+</html>
