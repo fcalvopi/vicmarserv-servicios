@@ -45,6 +45,18 @@
     .photo {
       margin-bottom: 10px;
     }
+    .image-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .image-preview img {
+      width: 100px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -95,9 +107,12 @@
     <div class="section">
       <h2>Fotos del trabajo</h2>
       <label>Antes:</label>
-      <input class="photo" type="file" accept="image/*" multiple />
+      <input class="photo" type="file" accept="image/*" multiple onchange="previewImages(this, 'preview-antes')" />
+      <div id="preview-antes" class="image-preview"></div>
+
       <label>Después:</label>
-      <input class="photo" type="file" accept="image/*" multiple />
+      <input class="photo" type="file" accept="image/*" multiple onchange="previewImages(this, 'preview-despues')" />
+      <div id="preview-despues" class="image-preview"></div>
     </div>
 
     <div class="section">
@@ -109,38 +124,5 @@
     </div>
 
     <div class="section">
-      <h2>Firmas</h2>
-      <label>Técnico responsable:</label>
-      <input type="text" />
-      <label>Cliente conforme:</label>
-      <input type="text" />
-    </div>
+      <h2>Firmas<
 
-    <footer>
-      <p>Vicmar Services - WhatsApp: 0969054410 | Email: info@vicmarserv.com</p>
-      <p>www.vicmarserv.com</p>
-    </footer>
-  </div>
-
-  <div style="text-align:center; margin-top: 20px;">
-    <button onclick="generatePDF()">Descargar en PDF</button>
-    <button onclick="window.location.href='index.html'">Volver al inicio</button>
-  </div>
-
-  <script>
-  function generatePDF() {
-    const element = document.getElementById('informe');
-    const opt = {
-      margin:       0.5,
-      filename:     'informe_vicmar.pdf',
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
-      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
-      pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-    html2pdf().set(opt).from(element).save();
-  }
-</script>
-
-</body>
-</html>
