@@ -128,18 +128,18 @@
   </div>
 
   <script>
-    function generatePDF() {
-      const element = document.getElementById('informe');
-      const opt = {
-        margin: 0.5,
-        filename: 'informe_vicmar.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2,useCORS: true },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-        pagebreak:    { mode: ['css', 'legacy'] } // permite multipágina
-      };
-      html2pdf().set(opt).from(element).save();
-    }
-  </script>
+  function generatePDF() {
+    const element = document.getElementById('informe');
+    const opt = {
+      margin: 0.5,
+      filename: 'informe_vicmar.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2, useCORS: true },
+      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+      pagebreak: { mode: ['css', 'legacy'] } // ✅ ahora sí está bien
+    };
+    html2pdf().set(opt).from(element).save();
+  }
+</script>
 </body>
 </html>
