@@ -40,6 +40,10 @@ body {
   font-family: var(--font-family-body);
   color: var(--color-text-default);
 }
+#informe {
+  width: 100%;
+  overflow: visible;
+}
 
 button,
 input,
@@ -372,4 +376,9 @@ footer {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+   #informe {
+  width: 100%;
+  overflow: visible;
+}
+
 }
